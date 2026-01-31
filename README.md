@@ -1,127 +1,129 @@
-# 🏦 Banking Customer Behavior Analysis  
-**Customer Profiling • RFM Segmentation • Strategic Recommendation**
+# 🏦 Banking Customer Behavior Analysis
+Customer Profiling • RFM Segmentation • Strategic Recommendation
 
-Final Project – Data Science & Data Analyst Bootcamp  
-**Author:** Iffat Ayman Ahnaf  
+Data Analysis Project | Author: Iffat Ayman Ahnaf
+
+
+## 📊 Project Presentation & Files
+- [**PPT Presentation**](https://drive.google.com/file/d/13xwmPkbXe5TLUUxleS7yhDpqsQ9MRdYS/view?usp=drive_link)
+
+- [**All Project Files (Presentation, Power BI, Notebooks, CSV)**](https://drive.google.com/drive/folders/1em_MwAnkIIpPRtAN5A3vAv8rP5TkglRm)
 
 ---
 
 ## 📌 Project Overview
-Project ini bertujuan untuk memahami **perilaku nasabah perbankan** melalui analisis profil demografi, pola transaksi, dan segmentasi RFM.  
-Hasil analisis digunakan untuk **mengidentifikasi nasabah bernilai tinggi**, **mendeteksi risiko churn**, serta **menyusun rekomendasi strategis berbasis data**.
+This project focuses on analyzing **banking customer behavior** using transaction and demographic data to support **data-driven strategic decisions**.
 
-👉 **Akses seluruh file project (Power BI, PDF, CSV):**  
-🔗 https://drive.google.com/drive/folders/1em_MwAnkIIpPRtAN5A3vAv8rP5TkglRm
+By applying **Customer Profiling** and **RFM (Recency, Frequency, Monetary) Segmentation**, the analysis aims to:
+- Identify **high-value customers**
+- Detect **loyalty potential**
+- Highlight **customers at risk of churn**
 
----
-
-## 🎯 Business Objective
-1. Mengidentifikasi profil nasabah berdasarkan **usia, generasi, dan wealth category**
-2. Melakukan **segmentasi nasabah menggunakan RFM**
-3. Menemukan **nasabah potensial loyal** dan **nasabah berisiko churn**
-4. Memberikan **strategi bisnis yang actionable**
+All insights are translated into **actionable business and retention strategies**.
 
 ---
 
-## 📂 Data Understanding
-Dataset berisi **±1 juta transaksi nasabah bank** (Agustus–Oktober 2016) yang mencakup:
-- Data demografi nasabah  
-- Saldo rekening  
-- Riwayat dan nilai transaksi  
-
-Dataset CSV tersedia di Google Drive (lihat link di atas).
+## 🎯 Objectives
+1. Understand customer characteristics based on **age, generation, and wealth category**
+2. Segment customers using **RFM methodology**
+3. Identify **potential loyal customers** and **high-risk churn customers**
+4. Provide **practical and applicable strategic recommendations**
 
 ---
 
-## 🧹 Data Preprocessing
-Tahapan utama preprocessing:
-- Perbaikan tipe data
-- Penanganan missing value
-- Pembersihan outlier usia
-- Standarisasi nama kota
-- Filtering periode transaksi
-- Agregasi data per nasabah untuk RFM
-
-Hasil akhir: **±836 ribu nasabah unik** siap dianalisis.
+## 📂 Dataset Description
+- Approximately **1 million transaction records**
+- Transaction period: **August – October 2016**
+- Includes customer demographic data, account balance, and transaction value
+- Dataset format: **CSV**
 
 ---
 
-## 👤 Customer Profile Analysis
-Gambaran umum nasabah bank:
+## 🧹 Data Preparation
+Main data preprocessing steps:
+- Data type standardization
+- Handling missing values
+- Removing anomalies in customer age
+- Standardizing city name formatting
+- Filtering relevant transaction periods
+- Aggregating transaction data at the **customer level** for RFM calculation
 
-![Customer Profile Dashboard](assets/dashboard_customer_profile.png)
-
-**Insight utama:**
-- ±836K nasabah aktif
-- Rata-rata usia ±40 tahun
-- Total saldo mencapai **₹85.85 Billion**
-- **Millennial & Gen X** menjadi kontributor saldo terbesar
-
----
-
-## 💰 Wealth Distribution
-Distribusi dana berdasarkan kategori kekayaan:
-
-- Sebagian besar nasabah berada di segmen **Mass Market & Standard**
-- Nilai dana terbesar justru terkonsentrasi di **Affluent & High Net Worth**
-
-📌 Menunjukkan bahwa **segelintir nasabah menguasai porsi dana terbesar**.
+After preprocessing, the final dataset contains approximately **836,000 unique customers**.
 
 ---
 
-## 🔍 RFM Segmentation
-Segmentasi nasabah berdasarkan **Recency, Frequency, dan Monetary**:
+## 📊 Dashboard Preview
 
-![RFM Segmentation Dashboard](assets/dashboard_rfm_segmentation_analysis.png)
-
-Segment utama:
-- Champions  
-- Potential Loyal  
-- Active  
-- High Risk  
-- Dormant  
-
-Segmentasi ini menjadi dasar pengambilan keputusan bisnis.
-
----
-
-## 📈 RFM Insights
-- **Potential Loyal** = mesin pertumbuhan utama
-- **High Risk** menyimpan dana besar namun mulai tidak aktif
-- Total dana berisiko keluar mencapai **₹22 Billion**
-- **Champions** sedikit jumlahnya tapi sangat bernilai
-
----
-
-## 🧠 Strategic Recommendation
-Rekomendasi strategis berbasis segmentasi:
-
+### 🧠 Strategic Recommendation & Customer Drill-Down
 ![Strategic Recommendation Dashboard](assets/dashboard_strategic_recomendation.png)
 
-- **Champions:** layanan prioritas & produk eksklusif  
-- **Potential Loyal:** dorong upgrade produk & investasi  
-- **High Risk:** intervensi cepat oleh Relationship Manager  
-- **Dormant:** program re-activation & insentif transaksi  
+**Key Insights:**
+- **Loyalty Candidate (Potential Loyal):** 66K customers  
+- **Urgent Win-Back (High Risk):** 3,394 customers  
+- **High Value At-Risk:** ₹22bn balance potentially leaving the bank  
+- Customer-level drill-down supports **Relationship Manager intervention**
 
 ---
 
-## 📊 Dashboard & Presentation
-Seluruh hasil analisis tersedia dalam format:
-- **Power BI Dashboard (interaktif)**
-- **Business Presentation (PDF)**
-- **Dataset CSV**
+### 👤 Customer Profile & Wealth Distribution
+![Customer Profile Dashboard](assets/dashboard_customer_profile.png)
 
-👉 **Download & akses semua file di satu tempat:**  
-🔗 https://drive.google.com/drive/folders/1em_MwAnkIIpPRtAN5A3vAv8rP5TkglRm
+**Key Insights:**
+- Total Customers: **836K**
+- Total Balance: **₹85.85bn**
+- Average Customer Age: **39.98**
+- Balance contribution dominated by **Millennial and Gen X**
+- High-value balances concentrated in **Affluent** and **High Net Worth** segments
+
+---
+
+### 🔍 RFM Segmentation Analysis
+![RFM Segmentation Dashboard](assets/dashboard_rfm_segmentation_analysis.png)
+
+**Key Insights:**
+- Largest segment: **Potential Loyal (≈334K customers)**
+- **High Risk** customers hold large transaction value but show declining activity
+- **Champions** are few in number but generate very high monetary value
+- Clear behavioral separation using **Recency, Frequency, and Monetary**
+
+---
+
+## 📈 RFM Insights Summary
+- **Potential Loyal** is the most dominant segment with strong growth opportunity
+- **High Risk** segment poses significant churn threat despite high balances
+- Total balance at risk of churn reaches approximately **₹22bn**
+- **Champions** represent the most valuable customers despite small population size
+
+---
+
+## 🧠 Strategic Recommendations
+- **Champions:**  
+  Provide priority banking services and exclusive investment offerings
+
+- **Potential Loyal:**  
+  Focus on upselling, cross-selling, and investment product expansion
+
+- **Active:**  
+  Encourage higher transaction frequency through rewards and engagement programs
+
+- **High Risk:**  
+  Immediate retention actions via Relationship Managers to secure high-value balances
+
+- **Dormant:**  
+  Reactivation campaigns and transaction-based incentives
 
 ---
 
 ## 🛠 Tools & Technologies
-- Python (Pandas, NumPy, Matplotlib, Seaborn)
-- Jupyter Notebook
-- Power BI
-- CSV / Excel
+- Power BI  
+- SQL  
+- Python (Data Cleaning & Analysis)  
+- Microsoft Excel  
 
 ---
 
-✨ *Project ini menunjukkan bagaimana data transaksi perbankan dapat diolah menjadi insight bisnis yang nyata untuk mendukung strategi retensi dan peningkatan nilai nasabah.*
+## 📌 Key Takeaway
+Effective customer segmentation enables banks to:
+- Retain high-value customers
+- Reduce churn risk
+- Optimize relationship management and marketing strategies
