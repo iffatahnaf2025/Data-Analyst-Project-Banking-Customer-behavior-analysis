@@ -1,76 +1,127 @@
 # 🏦 Banking Customer Behavior Analysis  
+**Customer Profiling • RFM Segmentation • Strategic Recommendation**
 
-Data Analysis Project  
+Final Project – Data Science & Data Analyst Bootcamp  
 **Author:** Iffat Ayman Ahnaf  
 
 ---
 
-## 📌 Project Summary
-Project ini menganalisis **perilaku nasabah perbankan** dengan mengombinasikan **profil demografi**, **kategori kekayaan (Wealth Category)**, dan **perilaku transaksi**.  
-Pendekatan **RFM (Recency, Frequency, Monetary)** digunakan untuk mengidentifikasi **nasabah bernilai tinggi**, **potensi loyalitas**, serta **risiko churn**, lalu diterjemahkan menjadi **rekomendasi strategis berbasis data**.
+## 📌 Project Overview
+Project ini bertujuan untuk memahami **perilaku nasabah perbankan** melalui analisis profil demografi, pola transaksi, dan segmentasi RFM.  
+Hasil analisis digunakan untuk **mengidentifikasi nasabah bernilai tinggi**, **mendeteksi risiko churn**, serta **menyusun rekomendasi strategis berbasis data**.
+
+👉 **Akses seluruh file project (Power BI, PDF, CSV):**  
+🔗 https://drive.google.com/drive/folders/1em_MwAnkIIpPRtAN5A3vAv8rP5TkglRm
 
 ---
 
-## 🎯 Business Objectives
-- Mengidentifikasi profil nasabah berdasarkan **usia, generasi, dan tingkat kekayaan**
-- Melakukan **segmentasi nasabah menggunakan model RFM**
-- Mendeteksi **nasabah berisiko churn** dan **nasabah potensial loyal**
-- Menyusun **strategic action** untuk retensi dan peningkatan nilai nasabah
+## 🎯 Business Objective
+1. Mengidentifikasi profil nasabah berdasarkan **usia, generasi, dan wealth category**
+2. Melakukan **segmentasi nasabah menggunakan RFM**
+3. Menemukan **nasabah potensial loyal** dan **nasabah berisiko churn**
+4. Memberikan **strategi bisnis yang actionable**
 
 ---
 
-## 📊 Dashboard Preview
-> Berikut adalah preview dari dashboard.  
-> Untuk **analisis interaktif & eksplorasi penuh**, silakan **download Power BI (.pbix)**.
+## 📂 Data Understanding
+Dataset berisi **±1 juta transaksi nasabah bank** (Agustus–Oktober 2016) yang mencakup:
+- Data demografi nasabah  
+- Saldo rekening  
+- Riwayat dan nilai transaksi  
 
-### Customer Profile
-![Customer Profile](assets/dashboard_customer_profile.png)
-
-### RFM Segmentation Analysis
-![RFM Segmentation](assets/dashboard_rfm_segmentation_analysis.png)
-
-### Strategic Recommendation & Customer Detail
-![Strategic Recommendation](assets/dashboard_strategic_recomendation.png)
+Dataset CSV tersedia di Google Drive (lihat link di atas).
 
 ---
 
-## 📈 Interactive Dashboard (Power BI)
-Dashboard interaktif lengkap dengan filter **City, Gender, Generation, Wealth Category, dan RFM Segment** tersedia dalam file Power BI.
+## 🧹 Data Preprocessing
+Tahapan utama preprocessing:
+- Perbaikan tipe data
+- Penanganan missing value
+- Pembersihan outlier usia
+- Standarisasi nama kota
+- Filtering periode transaksi
+- Agregasi data per nasabah untuk RFM
 
-👉 **Download Power BI (.pbix):**  
-📂 `powerbi/pbi_banking_customer_behavior_analysis.pbix`  
-
-> *Direkomendasikan dibuka menggunakan Power BI Desktop.*
-
----
-
-## 📑 Business Presentation (PDF)
-Ringkasan **problem statement, insight utama, RFM logic, dan rekomendasi strategis** disajikan dalam format presentasi.
-
-👉 **Download Presentation (PDF):**  
-📂 `presentation/ppt_banking_customer_behavior_analysis.pdf`
+Hasil akhir: **±836 ribu nasabah unik** siap dianalisis.
 
 ---
 
-## 🧠 Key Insights
-- **836K nasabah aktif** dengan rata-rata usia ±40 tahun  
-- **Millennial & Gen X** menjadi tulang punggung likuiditas bank  
-- Segmen **Potential Loyal** adalah mesin pertumbuhan terbesar  
-- Terdapat **₹22bn dana berisiko keluar** dari segmen *High Risk*  
-- Segmen **Champions** kecil secara jumlah, namun tinggi secara nilai
+## 👤 Customer Profile Analysis
+Gambaran umum nasabah bank:
+
+![Customer Profile Dashboard](assets/dashboard_customer_profile.png)
+
+**Insight utama:**
+- ±836K nasabah aktif
+- Rata-rata usia ±40 tahun
+- Total saldo mencapai **₹85.85 Billion**
+- **Millennial & Gen X** menjadi kontributor saldo terbesar
 
 ---
 
-## 🧩 Strategic Recommendations
-- **High Risk (Urgent Retention):** Intervensi personal oleh Relationship Manager  
-- **Potential Loyal (Up-Selling):** Upgrade produk & penawaran investasi  
-- **Champions (VIP Focus):** Layanan prioritas dan produk eksklusif  
-- **Dormant (Re-Activation):** Kampanye re-engagement & insentif transaksi
+## 💰 Wealth Distribution
+Distribusi dana berdasarkan kategori kekayaan:
+
+- Sebagian besar nasabah berada di segmen **Mass Market & Standard**
+- Nilai dana terbesar justru terkonsentrasi di **Affluent & High Net Worth**
+
+📌 Menunjukkan bahwa **segelintir nasabah menguasai porsi dana terbesar**.
 
 ---
 
-## 📂 Dataset (CSV)
-Dataset tidak disimpan langsung di repository karena ukuran file.
+## 🔍 RFM Segmentation
+Segmentasi nasabah berdasarkan **Recency, Frequency, dan Monetary**:
 
-👉 **Dataset tersedia di Google Drive:**  
-🔗 [Click here to access the CSV files](https://drive.google.com/drive/folders/1iy-9wJps6Lxlt4EKXfNwd611UscWoj78)
+![RFM Segmentation Dashboard](assets/dashboard_rfm_segmentation_analysis.png)
+
+Segment utama:
+- Champions  
+- Potential Loyal  
+- Active  
+- High Risk  
+- Dormant  
+
+Segmentasi ini menjadi dasar pengambilan keputusan bisnis.
+
+---
+
+## 📈 RFM Insights
+- **Potential Loyal** = mesin pertumbuhan utama
+- **High Risk** menyimpan dana besar namun mulai tidak aktif
+- Total dana berisiko keluar mencapai **₹22 Billion**
+- **Champions** sedikit jumlahnya tapi sangat bernilai
+
+---
+
+## 🧠 Strategic Recommendation
+Rekomendasi strategis berbasis segmentasi:
+
+![Strategic Recommendation Dashboard](assets/dashboard_strategic_recomendation.png)
+
+- **Champions:** layanan prioritas & produk eksklusif  
+- **Potential Loyal:** dorong upgrade produk & investasi  
+- **High Risk:** intervensi cepat oleh Relationship Manager  
+- **Dormant:** program re-activation & insentif transaksi  
+
+---
+
+## 📊 Dashboard & Presentation
+Seluruh hasil analisis tersedia dalam format:
+- **Power BI Dashboard (interaktif)**
+- **Business Presentation (PDF)**
+- **Dataset CSV**
+
+👉 **Download & akses semua file di satu tempat:**  
+🔗 https://drive.google.com/drive/folders/1em_MwAnkIIpPRtAN5A3vAv8rP5TkglRm
+
+---
+
+## 🛠 Tools & Technologies
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
+- Jupyter Notebook
+- Power BI
+- CSV / Excel
+
+---
+
+✨ *Project ini menunjukkan bagaimana data transaksi perbankan dapat diolah menjadi insight bisnis yang nyata untuk mendukung strategi retensi dan peningkatan nilai nasabah.*
