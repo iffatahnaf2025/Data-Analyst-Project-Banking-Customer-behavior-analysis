@@ -1,8 +1,7 @@
 # 🏦 Banking Customer Behavior Analysis
-Customer Profiling • RFM Segmentation • Strategic Recommendation
-
 Data Analysis Project | Author: Iffat Ayman Ahnaf
 
+---
 
 ## 📊 Project Presentation & Files
 - [**PPT Presentation**](https://drive.google.com/file/d/13xwmPkbXe5TLUUxleS7yhDpqsQ9MRdYS/view?usp=drive_link)
